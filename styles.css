@@ -1,3 +1,8 @@
 body {
-  background: orange;
+  background: white;
+}
+
+.catImg {
+  width: 40%;
+  height: 20%;
 }

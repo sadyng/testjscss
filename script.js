@@ -1,6 +1,12 @@
-console.log('hello!');
+let catImgs = document.querySelectorAll('.catImg');
+let clickCounterDivs = document.querySelectorAll('.clickCounterDiv');
 
-let b1 = document.querySelector('#b1');
-b1.addEventListener('click', (e) => {
-  alert('b1 clicked');
-});
+let counters = [0, 0];
+let catNames = ['acat', 'bcat'];
+
+for (let i = 0; i < catImgs.length; i++) {
+  catImgs[i].addEventListener('click', (e) => {
+    counters[i]++;
+    clickCounterDivs[i].innerHTML = counters[i];
+  });
+}
